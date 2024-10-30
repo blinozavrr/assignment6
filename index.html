@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн магазин одежды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Форма для входа -->
+    <div id="login-container">
+        <div id="login-form">
+            <h2>Вход в магазин</h2>
+            <input type="text" id="username" placeholder="Введите имя пользователя" required>
+            <button onclick="login()">Войти</button>
+        </div>
+    </div>
+
+    <!-- Основной сайт (скрыт до входа) -->
+    <div id="site-container" style="display: none;">
+        <!-- Шапка сайта -->
+        <header>
+            <h1>Онлайн магазин одежды</h1>
+            <button onclick="logout()">Выйти</button>
+        </header>
+
+        <!-- Фильтр категорий -->
+        <div id="filter-container">
+            <select id="filter" onchange="applyFilter()">
+                <option value="all">Все категории</option>
+                <option value="men">Мужская одежда</option>
+                <option value="women">Женская одежда</option>
+                <option value="kids">Детская одежда</option>
+            </select>
+        </div>
+
+        <!-- Список товаров -->
+        <div id="products">
+            <div class="product-item men">
+                <img src="images/men1.jpg" alt="Мужская футболка">
+                <p>Мужская футболка</p>
+            </div>
+            <div class="product-item women">
+                <img src="images/women1.jpg" alt="Женская блузка">
+                <p>Женская блузка</p>
+            </div>
+            <div class="product-item kids">
+                <img src="images/kids1.jpg" alt="Детская футболка">
+                <p>Детская футболка</p>
+            </div>
+            <!-- Добавьте еще товары для каждой категории -->
+        </div>
+
+        <!-- Футер сайта -->
+        <footer>
+            <p>&copy; 2024 Онлайн магазин одежды. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

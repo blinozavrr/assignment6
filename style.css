@@ -1,0 +1,125 @@
+/* Стили для формы входа */
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+#login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+#login-form h2 {
+    margin-bottom: 20px;
+}
+
+#login-form input, #login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#login-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для основного сайта */
+#site-container {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Шапка сайта */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Кнопка выхода */
+header button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #003d80;
+}
+
+/* Фильтр */
+#filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#filter {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Стили для списка товаров */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-item {
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #666;
+    font-size: 14px;
+}
